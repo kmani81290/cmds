@@ -1,11 +1,21 @@
-ps ---------------------------------------------------->Check Process
-dir --------------------------------------------------->check directory
-history ----------------------------------------------->check last history
-cli --------------------------------------------------->clear screen
-clc ---------------------------------------------------> clear content in text file
-cat --------------------------------------------------->check the content in a text file
-Get-Service | Where-Object {$_.Status –eq “Running”}--->check running services 
-Get-Service –DisplayName “*WMI*” ---------------------->Check with the name/ running service
-Get-Location ------------------------------------------>check current working directory
-Get-WmiObject -Class Win32_ComputerSystem ------------->Check system information
+ps ------------------------------------------------------------->Check Process
+dir ------------------------------------------------------------>check directory
+history -------------------------------------------------------->check last history
+cli ------------------------------------------------------------>clear screen
+clc ------------------------------------------------------------> clear content in text file
+cat ------------------------------------------------------------>check the content in a text file
+Get-Service | Where-Object {$_.Status –eq “Running”}------------>check running services 
+Get-Service –DisplayName “*WMI*” ------------------------------->Check with the name/ running service
+Get-Location --------------------------------------------------->check current working directory
+Get-WmiObject -Class Win32_ComputerSystem ---------------------->Check system information
+Get-WmiObject -Class Win32_operatingsystem | SELECT Caption-----> Get OS Version
 
+
+
+
+
+
+Task:-
+Create one file with some text and rm
+  echo test > test.txt ----------------------------------->create text with content of test
+  rm test.txt ----------------------------------------------------> remove file
