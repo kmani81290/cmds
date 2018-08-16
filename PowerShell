@@ -1,0 +1,11 @@
+ps ---------------------------------------------------->Check Process
+dir --------------------------------------------------->check directory
+history ----------------------------------------------->check last history
+cli --------------------------------------------------->clear screen
+clc ---------------------------------------------------> clear content in text file
+cat --------------------------------------------------->check the content in a text file
+Get-Service | Where-Object {$_.Status –eq “Running”}--->check running services 
+Get-Service –DisplayName “*WMI*” ---------------------->Check with the name/ running service
+Get-Location ------------------------------------------>check current working directory
+Get-WmiObject -Class Win32_ComputerSystem ------------->Check system information
+
