@@ -1,3 +1,4 @@
+Update-Help ---------------------------------------------------->Update
 get-help a* ---------------------------------------------------->check commands start with a (Help cmd)
 ps ------------------------------------------------------------->Check Process
 dir ------------------------------------------------------------>check directory
@@ -5,6 +6,8 @@ history -------------------------------------------------------->check last hist
 cli ------------------------------------------------------------>clear screen
 clc ------------------------------------------------------------> clear content in text file
 cat ------------------------------------------------------------>check the content in a text file
+Get-Service -Name spo* ----------------------------------------->check service start with spo
+Get-Service -Name spooler : Stop-Service
 Get-Service | Where-Object {$_.Status –eq “Running”}------------>check running services 
 Get-Service –DisplayName “*WMI*” ------------------------------->Check with the name/ running service
 Get-Location --------------------------------------------------->check current working directory
