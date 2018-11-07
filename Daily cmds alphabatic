@@ -6,6 +6,11 @@ cat /etc/yum.repos.d/server.repo
 cat /var/spool/mail
 cp /mnt/* /var/ftp/pub -rvf
 createrepo -v /var/ftp/pub
+git --version
 mount /dev/cdrom /mnt
+yum groupinstall "Development Tools"
 yum install ftp* -y
+yum install git -y
+yum install gettext-devel openssl-devel perl-CPAN perl-devel zlib-devel
 yum install samba* -y
+yum update
