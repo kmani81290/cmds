@@ -7,9 +7,15 @@ cat /var/spool/mail
 cp /mnt/* /var/ftp/pub -rvf
 createrepo -v /var/ftp/pub
 git --version
+history
+make configure
 mount /dev/cdrom /mnt
+tar -zxf git.tar.gz
+wget https://github.com/git/git/archive/v2.10.1.tar.gz -O git.tar.gz
 yum groupinstall "Development Tools"
 yum install ftp* -y
+yum install gcc-c++ -y
+yum install gcc gcc-c++ gcc-gfortran -y
 yum install git -y
 yum install gettext-devel openssl-devel perl-CPAN perl-devel zlib-devel
 yum install samba* -y
