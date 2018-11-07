@@ -1,9 +1,9 @@
-cd /etc/group
-cd /etc/hosts
-cd /etc/passwd
-cd /etc/shadow
-cd /etc/yum.repos.d/server.repo
-cd /var/spool/mail
+cat /etc/group
+cat /etc/hosts
+cat /etc/passwd
+cat /etc/shadow
+cat /etc/yum.repos.d/server.repo
+cat /var/spool/mail
 cp /mnt/* /var/ftp/pub -rvf
 createrepo -v /var/ftp/pub
 mount /dev/cdrom /mnt
