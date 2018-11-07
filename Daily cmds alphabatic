@@ -1,0 +1,11 @@
+cd /etc/group
+cd /etc/hosts
+cd /etc/passwd
+cd /etc/shadow
+cd /etc/yum.repos.d/server.repo
+cd /var/spool/mail
+cp /mnt/* /var/ftp/pub -rvf
+createrepo -v /var/ftp/pub
+mount /dev/cdrom /mnt
+yum install ftp* -y
+yum install samba* -y
